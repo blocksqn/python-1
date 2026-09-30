@@ -1,0 +1,61 @@
+file = open("my first code.txt","r")
+data=file.read()
+print(data)
+
+file.close()
+
+file = open("my first code.txt","w")
+data1=file.write("Good work/n")
+data=file.write("Good job/n")
+
+file.close()
+
+
+file = open("my first code.txt","a")
+data1=file.write("/nur first code ")
+data=file.write("r code ")
+
+file.close()
+
+
+try:
+    a=0
+    b=0
+    print(a/b)
+
+except ZeroDivisionError:
+    print("I DONT LIKE ZERO AS DENOMINATOR,THE FRACTION LIMIT WILL TEND TO INFINITY")
+
+
+
+try:
+    a=int(input ("enter a :"))
+    b=int(input ("enter b :"))
+    print(a/b)
+
+except ZeroDivisionError:
+    print("I DONT LIKE ZERO AS DENOMINATOR,THE FRACTION WILL TEND TO INFINITY")
+
+except ValueError:
+    print("I NEED A NUMBER TO PERFOM OPERATION NOT A STRING ")
+
+
+import rectangle
+
+length = 10
+breadth = 5
+
+print("Area:", rectangle.area(length, breadth))
+print("Perimeter:", rectangle.perimeter(length, breadth))
+
+
+
+class rectangle:
+    l=5
+    b=2
+    area=l*b
+    perimeter=2*(l+b)
+
+
+print(rectangle.area)
+print(rectangle.perimeter)

@@ -1,0 +1,269 @@
+#q1
+
+yourname= "Vani"
+print(yourname)
+
+
+
+
+
+
+yourname= input("Enter your name:")
+print(yourname)
+
+
+
+#q2
+
+number_1=int(input("Enter first number:"))
+number_2=int(input("Enter second number:"))
+print("The sum of entered numbers is:",number_1,"+",number_2,"=",number_1+number_2)
+print("The difference of entered numbers is:",number_1,"-",number_2,"=",number_1-number_2)
+print("The product of entered numbers is:",number_1,"*",number_2,"=",number_1*number_2)
+print("The quotient after division of entered numbers is:",number_1,"/",number_2,"=",number_1/number_2)
+print("The remainder after division of entered numbers is:",number_1,"%",number_2,"=",number_1%number_2)
+
+
+#q3
+
+
+
+#q4
+
+
+print(randrange(0,11))
+
+
+#q5
+
+random1=int(input("INPUT A WHOLE NUMBER FOR EVEN ODD CHECK:"))
+if(random1%2==0):
+    print(random1,"is even")
+elif(random1%2!=0):
+    print(random1,"is odd")
+ 
+
+#q6
+
+number_signcheck=int(input("enter an integer to check:"))
+if(number_signcheck>0):
+    print(number_signcheck,"is positive")
+
+elif(number_signcheck<0):
+    print(number_signcheck,"is negative")
+    
+else:
+    print(number_signcheck,"is zero")
+
+
+
+    #q7
+
+
+    numbers_1=int(input("Enter first number:"))
+    numbers_2=int(input("Enter second number:"))
+    numbers_3=int(input("Enter third number:"))
+
+    if(numbers_1>numbers_2)and(numbers_1>numbers_3):
+        print("The largest number is :",numbers_1)
+
+    if(numbers_2>numbers_3)and(numbers_2>numbers_1):
+        print("The largest number is :",numbers_2)
+
+    if(numbers_3>numbers_1)and(numbers_3>numbers_2):
+      print("The largest number is :",numbers_3)
+
+      #Q8
+
+first10_numbers=1
+while  first10_numbers<11:
+    print(first10_numbers)
+    first10_numbers +=1
+    
+
+#Q9
+multiplier=8
+print("TABLE OF 8")
+for i in range(1,10,1):
+        print(multiplier,"*",i,"=",multiplier*i)
+
+#Q10
+x=int(input("enter a tens digit :"))
+y=int(input("enter a ones digit :"))
+
+number=(10*x)+y
+print("number  is :",number)
+ones_digit=y
+tens_digit=x
+reverse=(10*ones_digit)+tens_digit
+print("reverse is :",reverse)
+
+#q11
+
+
+#q12
+
+i=1
+while i<5:
+    print(i*"*")
+    i=i+1
+
+
+
+#q13
+
+
+
+#list 
+
+
+list1=[1,32,98,44,25,56,77,18,69,10]
+if(list1%2==0):
+    print(list1,"is even")
+else:
+  print(list1,"is odd")  
+
+    
+
+
+
+
+#square
+side=int(input("Enter the magnitude of squares side" ))
+
+def perimetersq():
+    print("perimeter of square:",4*side)
+
+def areasq():
+    print("area of square:",side**2)
+
+
+
+
+number=int(input("enter a number:"))
+
+def factorial(i):
+     
+     if i==0:
+          return 1
+     elif i==1:
+          return 1
+     return i*factorial(i-1)
+    
+print(factorial(number))
+
+
+
+
+def info_student(name,Class,rollno,board):
+    print(name,Class,rollno,board)
+
+
+info_student(name="raman",Class="12",rollno="123",board="CBSE")
+
+
+def areasquare(side=3):
+     print("area of square:",side**2)
+
+areasquare()
+
+
+
+
+
+
+
+
+
+
+def detailsstudent(name, course, hostel_block):
+
+    print("Name:", name)
+    print("Course:", course)
+    print("Hostel Block:", hostel_block)
+detailsstudent("Grace","B.VOC","B")
+
+
+
+def details(**details):
+    print(details)
+ 
+details(name="A",course="e",subject=12,cgpa=8.2)
+
+details(name="B",course="f",subject=12,cgpa=9.2)
+
+details(name="C",course="j",subject=12,cgpa=9.5)
+
+
+
+def students(*names):
+    print(names)
+
+students("DHRITI","MAYA","MANNAT","SIMON","MYRA","VANI")
+
+
+
+
+
+file = open("R console.txt","r")
+data=file.read()
+print(data)
+
+file.close()
+
+file = open("R console.txt","w")
+data1=file.write("Good work/n")
+data=file.write("Good job/n")
+
+file.close()
+
+
+file = open("R console.txt","a")
+data1=file.write("/nur first code ")
+data=file.write("r code ")
+
+file.close()
+
+
+try:
+    a=0
+    b=0
+    print(a/b)
+
+except ZeroDivisionError:
+    print("I DONT LIKE ZERO AS DENOMINATOR,THE FRACTION LIMIT WILL TEND TO INFINITY")
+
+
+
+try:
+    a=int(input ("enter a :"))
+    b=int(input ("enter b :"))
+    print(a/b)
+
+except ZeroDivisionError:
+    print("I DONT LIKE ZERO AS DENOMINATOR,THE FRACTION WILL TEND TO INFINITY")
+
+except ValueError:
+    print("I NEED A NUMBER TO PERFOM OPERATION NOT A STRING ")
+
+
+
+    import rectangle
+
+length = 10
+breadth = 5
+
+print("Area:", rectangle.area(length, breadth))
+print("Perimeter:", rectangle.perimeter(length, breadth))
+
+
+
+class rectangle:
+    l=5
+    b=2
+    area=l*b
+    perimeter=2*(l+b)
+
+
+print(rectangle.area)
+print(rectangle.perimeter)

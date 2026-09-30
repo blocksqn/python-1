@@ -1,0 +1,9 @@
+class rectangle:
+    l=5
+    b=2
+    area=l*b
+    perimeter=2*(l+b)
+
+
+print(rectangle.area)
+print(rectangle.perimeter)
